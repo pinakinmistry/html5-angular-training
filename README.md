@@ -78,7 +78,7 @@ html5-angular-training
 - Stopping Web Workers
 - Using Timers
 
-### Web Storage
+### Web Storage ==> Aditya
 - Overview of HTML5 Web Storage
 - Browser Support for HTML4 Web Storage
 - Using the HTML5 Web Storage
@@ -86,7 +86,7 @@ html5-angular-training
 - Setting and Retrieving Values
 - Plugging Data Leaks
 
-### HTML5 Offline Web Applications
+### HTML5 Offline Web Applications ==> Aditya
 - Overview of HTML5 Offline Web Applications
 - Browser Support for HTML5 Offline Web Applications
 - Using HTML5 Offline Web Applications API
