@@ -11,7 +11,7 @@ html5-angular-training
  
 # DAY1: 
 ## HTML5 and CSS3
-### Overview of HTML5
+### Overview of HTML5 ==> Pinakin
 - New in HTML5
 - New DOCTYPE and Character Set
 - New and Depreciated Elements
@@ -20,13 +20,13 @@ html5-angular-training
 - JavaScript Logging and Debugging
 - Window.JSON
 
-### Using HTML5 Today
+### Using HTML5 Today ==> Pinakin
 - Currently available features
 - Browser Support
 - Detective native availability of features
 - Working with emulation
 
-### Understanding HTML5 Markup
+### Understanding HTML5 Markup ==> Pinakin
 - HTML5 Page Structure
 - HTML5 DOCTYPE
 - HTML5 markup structural elements
@@ -46,7 +46,7 @@ html5-angular-training
 - Checking Forms with Validation
 - Validation Feedback
 
-### HTML5 Canvas & SVG
+### HTML5 Canvas & SVG ==> Pinakin
 - Overview of Canvas Vs. SVG
 - Canvas coordinates
 - Context
@@ -94,7 +94,7 @@ html5-angular-training
 - Manifest Files
 - The applicationCache API
 
-### CSS 3.0
+### CSS 3.0 ==> Pinakin
 - Introducing CSS3
 - CSS3 Colors, Gradients and Multiple Backgrounds
 - Rounded Corners and Border-Radius
