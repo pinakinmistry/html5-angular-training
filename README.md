@@ -63,7 +63,7 @@ html5-angular-training
 - Broadcasting Information
 - Using the EventSource API
 
-### WebSockets
+### WebSockets ==> Aditya
 - Realtime and HTTP
 - Understanding HTML5 Web Sockets
 - Using HTML5 WebSockets API
