@@ -106,7 +106,7 @@ html5-angular-training
 
 # DAY 2
 ## JavaScript
-### Expressive JavaScript
+### Expressive JavaScript ==> Sunny
 - The Flexibility of JavaScript
 - JavaScript as a Loosely Typed Language
 - Functions as First-Class Objects
@@ -127,7 +127,7 @@ html5-angular-training
 - Binding Function Contexts
 - Overriding Function Behavior
 
-### Object Orientation With Prototypes
+### Object Orientation With Prototypes ==> Sunny
 - Object Instantiation
 - Constructors
 - Inheritance and Prototype Chain
@@ -138,14 +138,14 @@ html5-angular-training
 - Type Coercion
 
 ## jQuery
-### Introducing jQuery
+### Introducing jQuery ==> Sunny
 - Unobtrusive JavaScript
 - jQuery fundamentals
 - The jQuery wrapper
 - Utility functions
 - The document ready handler
 
-### Creating the wrapped element set
+### Creating the wrapped element set ==> Sunny
 - Selecting elements for manipulation
 - Using basic CSS selectors
 - Using child, container, and attribute selectors
@@ -156,7 +156,7 @@ html5-angular-training
 - Determining the size of the wrapped set
 - Obtaining elements from the wrapped set
 
-### Manipulating page contents with jQuery
+### Manipulating page contents with jQuery ==> Sunny
 - Manipulating element properties and attributes
 - Manipulating element properties
 - Fetching attribute values
