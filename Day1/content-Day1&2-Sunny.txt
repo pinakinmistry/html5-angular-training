@@ -143,3 +143,39 @@ Let's  start with oops in js,
   About Encapsulation : In the previous example, Student don't need to know how the Person class's walk() method is implemented, but still can use that method, that's encapsulation
   
   About Polymorphism : Just like all methods and properties are defined inside the prototype property, different classes can define methods with the same name; methods are scoped to the class in which they're defined.
+
+
+
+
+
+### jQuery Concepts
+
+# Unobtrusive javascript : "Unobtrusive JavaScript" is a general approach to the use of JavaScript in web pages. Best way to see the javascript in an unobtrusive way is by these way : 
+- Separation of functionality (the "behavior layer") from a Web page's structure/content and presentation
+  Best practices to avoid the problems of traditional JavaScript programming (such as browser inconsistencies and lack of scalability).
+
+- Progressive enhancement to support user agents that may not support advanced JavaScript functionality. 
+
+eg : <input type="button" id="btn" onclick="alert('Test')" />
+
+DESC : That is not unobstrusive javascript because behaviour and presentation are mixed. The onclick shouldn't be there in html and should be part of javascript itself not html.
+
+To make the above example unobtrusive way 
+
+eg : <input type="button" id="btn" />
+      JS file:
+      var el = document.getElementById('btn');
+      el.onclick = function(){
+        alert('Test');
+      };
+
+
+# jQuery fundamentals : jQuery($) is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+  
+  In simple words:
+  - Open-Source and lightweight JavaScript library
+  - It has Cross-browser support
+  - Easy DOM interaction
+  - Ajax Maniuplation
+  - It provide useful alternatives for common programming tasks (CSS, HTML)
+  - Its rich in plugins eco-system
