@@ -1,0 +1,145 @@
+## OOPS in JAVASCRIPT
+
+### Overview of Object-oriented programming
+Object-oriented programming is a programming paradigm that uses abstraction to create models based on the real world. It uses several techniques from previously established paradigms, including modularity, polymorphism, and encapsulation, infact today most of the programing language uses OOPS such as JAVA, JAVASCRIPT, C++, C#, Python, Objective C etc.
+
+#Terminology used in OOPS:
+	
+- Namespace : Application specific name that describes the functionality of the group.
+
+- Class : Defines the characteristics of the object. It is a template definition of variables and methods of an object.
+
+- Object : An Instance of a class.
+
+- Property : An object characteristic, such as height, width, color etc.
+
+- Method : An object capability, such as a person can jump etc.
+
+- Constructor : A method called at the moment of instantiation of an object. It usually has the same name as that of the class containing it.
+
+- Inheritance : A class can inherit characteristics from another class eg: A child inherits certain features from their parent.
+
+- Encapsulation : Wrapping up of data and its associated methods under same group.
+
+- Abstraction : 
+
+- Polymorphism : Poly means "many"  and morphism means "forms". So it defines itself as different classes might define the same method or property.
+
+#Prototype-based programming(Defenation)
+In short words, class less programming style is prototype-based programing. Prototype-based programming is a style of object-oriented programming in which classes are not present, we resue the behavior of object by decorating thier properties.
+
+
+#JavaScript object oriented programming
+Let's  start with oops in js, 
+
+- Global Namespace : var MYAPP = MYAPP || {};
+  Desc : Here in above code sample we have first checked whether MYAPP is already defined (either in same file or in another file). If yes, then use the existing MYAPP global object, otherwise create an empty object called MYAPP which will encapsulate method, functions, variables and objects.
+
+  now lets add variable,function and method in namespace
+
+  MYAPP.commomMethod = {
+  	name : "",
+  	age : "",
+  	validateName : function(){
+  		// do your stuff
+  	},
+  	validateAge : function(){
+  		// do your stuff
+  	}
+  }
+
+- Standard built-in objects
+  JavaScript has several objects included in its core, for example, there are objects like Math, Object, Array, and String. eg : console.log(Math.random()); // here we show usage of random number using Math.random();
+
+  ** Note : Every object in JavaScript is an instance of the object Object and therefore inherits all its properties and methods.
+
+- Custom objects
+  * CLASS : JavaScript is a prototype-based language which contains no class statement, such as is found in C++ or Java. JavaScript uses functions as classes. Defining a class is as easy as defining a function.
+  eg: var Person = function () {}; // as simple as that.
+
+  * OBJECT : To create a new instance of an object obj we use the statement new obj, assigning the result (which is of type obj) to a variable to access it later. eg: var obj = new Object()
+
+  * Constructor : The constructor is called at the moment of instantiation (the moment when the object instance is created). The constructor is a method of the class. In JavaScript the function serves as the constructor of the object, therefore there is no need to explicitly define a constructor method.
+
+  eg :  var Person = function () {
+		  console.log('instance created');
+		};
+
+		var person1 = new Person();
+		var person2 = new Person();
+
+	Desc :  The constructor of the class Person logs a message when a Person is instantiated.		
+
+  * PROPERTY & METHODS : Let's explain this with example directly
+
+   eg : var Person = function (firstName) {
+		  this.firstName = firstName; //property
+		};
+
+		Person.prototype.sayHello = function() {  //method
+		  console.log("Hello, I'm " + this.firstName);
+		};
+
+		var person1 = new Person("Sunny");
+		var person2 = new Person("Aman");
+
+		// call the Person sayHello method.
+		person1.sayHello(); // logs "Hello, I'm Alice"
+		person2.sayHello(); // logs "Hello, I'm Bob"
+
+  * Major concepts of OOP's in example
+
+  	// Define the Person constructor
+  	var Person = function(firstName) {
+  	  this.firstName = firstName;
+  	};
+
+  	// Add a couple of methods to Person.prototype
+  	Person.prototype.walk = function(){
+  	  console.log("I am walking!");
+  	};
+
+  	Person.prototype.sayHello = function(){
+  	  console.log("Hello, I'm " + this.firstName);
+  	};
+
+  	// Define the Student constructor
+  	function Student(firstName, subject) {
+  	  /* Call the parent constructor, making sure (using Function#call)
+  	   that "this" is set correctly during the call*/
+  	  Person.call(this, firstName);
+
+  	  // Initialize our Student-specific properties
+  	  this.subject = subject;
+  	};
+
+  	// Assiging parent properties to child
+  	Student.prototype = Person.prototype; 
+
+  
+  	// Replace the "sayHello" method of parent
+  	Student.prototype.sayHello = function(){
+  	  console.log("Hello, I'm " + this.firstName + ". I'm studying "
+  	              + this.subject + ".");
+  	};
+
+  	// Add a "sayGoodBye" method
+  	Student.prototype.sayGoodBye = function(){
+  	  console.log("Goodbye!");
+  	};
+
+  	// Example usage:
+  	var student1 = new Student("Janet", "Applied Physics");
+  	student1.sayHello();   // "Hello, I'm Janet. I'm studying Applied Physics."
+  	student1.walk();       // "I am walking!"
+  	student1.sayGoodBye(); // "Goodbye!"
+
+  	// Check that instanceof works correctly
+  	console.log(student1 instanceof Person);  // true 
+  	console.log(student1 instanceof Student); // true
+
+
+
+  About Encapsulation : In the previous example, Student don't need to know how the Person class's walk() method is implemented, but still can use that method, that's encapsulation
+  
+  About Polymorphism : Just like all methods and properties are defined inside the prototype property, different classes can define methods with the same name; methods are scoped to the class in which they're defined.
