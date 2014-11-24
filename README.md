@@ -187,7 +187,7 @@ html5-angular-training
 - How Angular.js is opinionated
 - Difference between Backbone.js and Angular.js
 
-### Angular.js Building Blocks
+### Angular.js Building Blocks ===> Sunny
 - Controller Component
 - Model Component
 - View Component
@@ -198,7 +198,7 @@ html5-angular-training
 - Factory
 - DI in Angular.js
 
-### Anatomy of an Angular.js Applications
+### Anatomy of an Angular.js Applications ===> Sunny
 - Creating Boundaries using ng-app - Model View Controller
 - Templates and Data Binding
 - Repeating elements in templates
